@@ -1,0 +1,192 @@
+body{
+    font-family: "Roboto";
+    line-height: 1.5;
+}
+
+
+.container{
+	max-width: 1110px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.sm-container{
+	max-width: 730px;
+	margin: 0 auto;
+	padding: 0 10px;
+	
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+	color:inherit;
+}
+
+
+h2{
+	font-size:$lg-font-size;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 60px;
+	margin-bottom: 40px;
+    color:$mcolor;
+    @include mobile(){
+        font-size: $sm-font-size;
+        margin-top: 32px;
+        margin-bottom: 20px;
+    } 
+}
+
+.h2-white{
+	color:$light;
+}
+.h2-black{
+	color:$dark;
+}
+.h2-sm-b{
+	font-size:$md-font-size;
+    color:$dark;
+    @include pad(){
+        font-size: $md-font-size;
+    }
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+	color:inherit;
+}
+
+
+// header as below.
+
+.nav-bar{
+    font-size: $sm-font-size;
+    background-color:$mcolor;
+    color:$light; 
+	@include flex;
+    align-items: center;
+    text-align: center;
+    @include mobile(){
+        display: block;	
+    }
+    img{
+        display: block;
+        padding-left:80px;
+        @include pad(){
+            padding-left: 32px;
+        }
+        @include mobile(){
+            margin: 0 auto;
+            padding:10px 0;
+        }       
+    }
+   
+}
+
+.nav-selection{
+	@include flex;
+    justify-content: space-around;
+    li{
+        @include mobile (){
+            width: 50%;	
+            border: 1px solid $light;}    
+    }
+}
+
+.select-items a{
+    padding: 30px 32px;
+    height: 100%;
+    width: 100%;
+    @include pad(){
+        padding: inherit 15px;
+    }
+    @include mobile() {
+        padding:8px 54px;
+    }
+	&:hover{
+        background-color:$subcolor;
+        opacity: .8;
+        color: $dark;
+    }
+}
+
+
+// footer as below.
+
+
+.footer{
+	background-color:$mcolor;
+	color:$light;
+}
+.footer-m-flex{
+    @include flex;
+	padding-top: 32px;
+	padding-bottom: 36px;
+
+}
+.footer-nav{
+    @include flex;
+    li{
+        padding-right: 48px;
+        padding-bottom: 36px;
+    }
+    @include mobile(){
+        display: none;
+    }
+}	
+.media-bar{
+    @include flex;
+    width: 25%;
+    @include mobile{
+        width: 30%;
+    }
+
+}
+
+
+.footer-general-info{
+	font-size:$md-font-size;
+    @include pad(){
+        font-size:$sm-font-size;
+    }
+    @include mobile(){
+        font-size: $base-font-size;
+    }
+    li{
+        padding-bottom: 36px;}
+    img{
+        vertical-align: middle;
+        padding-right: 22px;}
+    }	
+
+
+.footer-nav a{
+    border-bottom: 1px solid transparent;
+    &:hover{
+        border-bottom: 1px solid $light;
+    }
+}
+
+.footer-copyright{
+	padding-top: 32px;
+	padding-bottom: 39px;
+	border-top: 1px solid #fff;
+	margin: 0 auto;
+}
+.footer-copyright-policy{
+    @include flex;
+    justify-content: flex-end;
+    @include mobile(){
+        display: block;
+		font-size: 14px;
+    }
+    li{
+        padding-left: 24px;
+        @include mobile(){
+            padding-left: 0;
+            padding-top: 16px;
+        }
+    }
+}
+

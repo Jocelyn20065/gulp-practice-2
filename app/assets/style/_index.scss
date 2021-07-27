@@ -1,0 +1,305 @@
+.banner{
+	background:url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true");
+	height: 770px;
+	background-position: top;
+	background-size: cover;
+	color: #650300;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:flex-end;
+    padding-right:10%;
+    @include mobile(){
+        height: 394px;
+        background-position:center center;
+    }
+}
+
+
+h1{
+	text-align: right;
+	font-size:$h1-font-size;
+	line-height:1.5;
+    font-weight: bold;
+    @include pad(){
+        font-size:$lg-font-size;
+    }
+    @include mobile(){
+        font-size: $md-font-size;
+    }
+    span{
+        font-size: $md-font-size;
+        @include pad(){
+            font-size: 20px;
+        }
+        @include mobile(){
+            font-size: $base-font-size;
+        }
+    }
+}
+
+
+.main-story{
+	background-color: $subcolor;    
+}
+.main-story-info-content{
+    @include flex;
+    li{
+        text-align: center;
+        font-weight: bold;
+        width: 24%;
+        @include pad(){
+            width: 48%;
+            padding: 0 25px;
+        }
+        @include mobile(){
+            width: 60%;
+            margin: 0 auto;
+        }
+        .sp-pic{
+            padding:12px 0;
+        }
+    }   
+    h3{
+        font-size:$sm-font-size;
+	    padding-top: 24px;
+	    padding-bottom: 8px;
+	    color:$mcolor; 
+    }
+	p{
+        padding-bottom: 104px;
+        text-align:left;
+        @include mobile(){
+            padding-bottom: 54px;
+        }
+
+    }
+
+}
+
+.classic-design-info{
+	@include flex;
+	padding-bottom: 32px;
+    align-items:center;
+    justify-content: space-around;   
+    @include pad(){
+        padding-bottom: 8px;
+        justify-content: center;
+    }
+    &:nth-child(3){
+        flex-direction: row-reverse;
+        @include pad(){
+            flex-direction: row;
+        }
+    }
+    span{
+        vertical-align: middle;
+        font-size:$lg-font-size;
+    }
+}
+
+
+.classic-design-pic{
+	width:635px;
+    height:auto;
+    padding: 16px 0;
+    @include pad(){
+		width:390px;
+		height:auto;
+		padding-right: 0;
+    }
+    @include mobile(){
+        display: none;
+    }
+
+}
+
+
+.classic-design-info a{
+	color: $mcolor;
+    font-size: $lg-font-size;
+    padding-right: 30px;
+    @include pad(){
+        width: 40%;
+        padding-left: 30px;
+        padding-right: 0;
+        font-size: $md-font-size;
+    }
+    @include mobile(){
+		display: block;
+		background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-1.png?raw=true");
+		width: 345px;
+        height: 134px;
+        line-height: 134px;
+		background-size: cover;
+		background-position: center;
+		text-align: center;
+        padding: 0;
+        
+    }
+}
+.classic-design-info:nth-child(3) a{
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+
+@include mobile{
+	.classic-design-info:nth-child(3) a{
+		background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2.png?raw=true");
+		background-size: cover;
+		background-position: center;
+	}
+	.classic-design-info:nth-child(4) a{
+		background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-3.png?raw=true");
+		background-size: cover;
+		background-position: center;
+	}
+
+}
+.classic-design-info a:hover{
+    color:$shadow;
+    @include mobile{
+        color: $light;
+    }
+
+}
+
+
+
+/* co-branded content as following */
+
+.co-branded-design {
+	background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true");
+}
+
+.co-brand-design-info{
+    @include flex;
+    padding-bottom: 80px;
+    @include mobile(){
+        padding-bottom: 32px;
+    }
+}
+.co-brand-design-info li{
+	background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true");
+	background-position:center;
+	background-size:cover;
+	background-blend-mode:normal;
+	width: 540px;
+	height: 455px;
+	margin: 0 auto;
+    width: 48%;
+    @include pad(){
+        width: 330px;
+        height: 278px;
+    }
+    @include mobile(){
+        margin-bottom: 16px;
+    }
+    &:nth-child(2){
+        background:url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true");
+        background-position:center;
+        background-size:cover;
+    }
+}
+
+.co-brand-design-info a{
+	display: block;
+	text-decoration: none;
+	color:#aa0601;
+	text-align: center;
+	line-height: 455px;
+	font-size: 72px;
+	font-weight: bold;
+    background: rgba(255, 255, 255, 0.4);
+    @include pad(){
+        line-height: 278px;
+        font-size: $md-font-size;    
+    }
+}
+
+
+.recommendation-info{
+    @include flex;
+    margin-bottom: 80px;
+    li{
+        width: 24%;
+        border:1px solid $border;
+        box-shadow: $border 0 2px 1px;
+        @include pad(){
+            width: 48%;
+            margin-bottom: 32px;
+            margin-left: auto;
+            margin-right: auto;
+            img{
+                width: 100%;
+            }
+        }
+        @include mobile(){
+            width: 98%;
+            margin-bottom: 32px;
+        }
+    
+    }
+    h3{
+        font-size:$xs-font-size;
+        padding: 8px 16px 16px;
+    }
+    p{
+        height: 72px;
+        padding: 0 16px;
+    }
+    span{
+        padding: 52px 16px 16px;
+        display: block;
+        font-size: $xs-font-size;
+        color:$gray;
+    }
+
+}
+
+.contact-us{
+	background: #AA06010D;
+	padding-bottom: 40px;
+
+}
+.contact-info{
+	padding:0;
+    font-size:$sm-font-size;
+    @include mobile(){
+        font-size: $base-font-size;
+    }
+}
+
+.contact-form{
+    @include flex-col;
+    label{
+        padding: 8px 0;
+    }
+}
+
+.contact-form input[type=text],[type=tel],[type=email],textarea{
+    padding: 16px;
+	background-color:$subcolor;
+	outline:0;
+    border:1px solid $gray;
+}
+input[type=submit]{
+	background-color:$mcolor;
+	color:$light;
+	outline:0;
+	border:0;
+	width: 350px;
+	text-align: center;
+	padding: 16px 0;
+    margin: 40px auto;
+    &:hover{
+        cursor: pointer;
+        background: $shadow;
+    }
+    @include mobile(){
+        width: 165px;
+		padding: 16px 0;
+		margin: 40px auto;
+    }
+}

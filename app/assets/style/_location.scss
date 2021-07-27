@@ -1,0 +1,105 @@
+
+.locations-main{
+    @include pad(){
+        max-width: 635px;
+    }
+
+    h2{
+        text-align: left;
+        padding-left: 16px;
+        border-left: 8px solid $mcolor;
+        
+    }
+    h3{
+        font-size:$sm-font-size;
+    }
+    .selection{
+        font-size:$xs-font-size;
+        padding: 8px 20px 11px 30px;
+        margin-bottom: 37px;
+        color: $gray;
+    }
+} 
+
+.flex-area{
+    @include nw-flex;
+    @include pad(){
+        display: block;
+    }
+    .locations-info{
+        width: 40%;
+        @include pad(){
+            width: 100%;
+           @include flex;
+           justify-content:space-around;
+           margin: 0 auto;
+        }
+        @include mobile(){
+            display: block;
+        }
+        h3{
+            padding: 12px 24px;
+            border: 1px solid $border;
+            @include pad(){
+                padding: 8px 24px;
+            }
+        }
+        .location-pic{
+            background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate2.jpg?raw=true");
+            background-size: cover;
+            background-position: center;
+            width: auto;
+            height: 224px;
+            @include pad(){
+                width: 45%;
+                height: 164px;
+            }
+            @include mobile(){
+                width: 100%;
+            }
+        }
+        .locations-info-detailed {
+            padding-bottom: 16px;
+            padding-left: 27px;
+            border: 1px solid $border;
+            margin-bottom: 160px;
+            @include pad(){
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+
+.locations-info-detailed li{
+	font-size:$sm-font-size;
+    color:$mark;
+    padding: 9px 16px 3px 32px;
+    @include pad(){
+        font-size: $xs-font-size;
+    }
+    &:nth-child(1){
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-phone-black.svg");
+        background-repeat: no-repeat;
+        background-position: bottom 5px left;
+    }
+    &:nth-child(2){
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-clock-black.svg");
+        background-repeat: no-repeat;
+        background-position: bottom 5px left;
+    }
+    &:nth-child(3){
+        background-image: url("https://upload.cc/i1/2021/07/20/rnjofX.png");
+        background-repeat: no-repeat;
+        background-position: bottom 5px left;
+    }
+}
+
+@include pad(){
+.map{
+    @include google-map-box(50%, 10px);
+    iframe{
+        @include google-maps-iframe;
+    }
+}
+}

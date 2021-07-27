@@ -7,20 +7,64 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
   <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+    rel="stylesheet">
 </head>
 
 <body>
-  <header class="header">
-    這是 header <a href="page1.html">連結page1</a>
-  </header>
+<!-- header as below -->
+<div class="header">
+  <div class="nav-bar">
+          <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true" alt="logo" >
+          <ul class="nav-selection">
+              <li class="select-items"><a href="product.html">系列鏡框</a></li>
+              <li class="select-items"><a href="location.html">門市據點</a></li>
+              <li class="select-items"><a href="#">部落格</a></li>
+              <li class="select-items"><a href="#">常見問題</a></li>
+          </ul>  
+  </div>
+</div>
 
+<!-- end of header -->
   <%- contents %>
 
-  <footer class="footer">
-    footer meaningless
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+  <div class="footer">
+    <div class="footer-m-flex container">
+        <div class="footer-nav-list ">
+            <ul class="footer-nav">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="product.html">系列鏡框</a></li>
+                <li><a href="location.html">門市據點</a></li>
+                <li><a href="#">部落格</a></li>
+                <li><a href="#">常見問題 </a></li>
+            </ul>
+            <ul class="footer-general-info container">
+                <li><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-phone.svg" alt="phone"><a href="tel:+ 0800-000-000">0800-000-000</a></li>
+                <li><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-mail.svg" alt="mail"><a href="mailto:glasses@business.com">glasses@business.com</a></li>
+            </ul>
+        </div>
+        <ul class="media-bar">
+            <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg" alt="fb"></a></li>
+            <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg" alt="ig"></a></li>
+            <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-line.svg" alt="line"></a></li>
+        </ul>
+    </div>
+    <!--  -->
+    <div class="footer-copyright container">
+        <p>Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="footer-copyright-policy">
+            <li><a href="#">隱私權政策</a></li>
+            <li><a href="#">服務條款</a></li>
+        </ul>
+    </div>
+</div>
+  <!-- <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script> -->
 </body>
 
 </html>
