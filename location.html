@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
+  <title>location</title>
   <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,11 +32,34 @@
 
 <!-- end of header -->
   
-<h1>
-  this is page 1
-</h1>
-
-<div class="box"></div>
+<div class="locations-main container">
+    <h2>門市據點</h2>
+    <h3>
+        <span>選擇分店</span> 
+        <select name="locations" class="selection">
+            <option value="Taipei-Tiong-san">台北中山旗艦店</option>
+            <option value="Taipei-Tai-an">台北大安門市</option>
+            <option value="Taipie-Siong-san">台北松山區-北部服務維修中心</option>
+        </select>
+     </h3>
+     <div class="flex-area">
+         <div class="locations-info">
+             <div class="location-pic"></div>
+             <flex-bar>
+                <h3>台北中山旗艦店</h3>
+                <ul class="locations-info-detailed">
+                    <li><span> 電話:(02)000-1234</span></li>
+                    <li>營業時間：10:00-21:00</li>
+                    <li>地址：台北市中山區南京東路25巷2-1號</li>
+                </ul>
+            </flex-bar>
+         </div>
+         <div class="map">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57823.75945346075!2d121.51058185429343!3d25.068498692650703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abf982a31e01%3A0x464d170d822eb229!2zMTA0OTHlj7DljJfluILkuK3lsbHljYA!5e0!3m2!1szh-TW!2stw!4v1626785157274!5m2!1szh-TW!2stw" width="635" height="422" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+             <!-- 嵌入 Google map -->
+         </div>
+     </div>
+</div>
 
   <div class="footer">
     <div class="footer-m-flex container">
